@@ -1,7 +1,9 @@
 <template>
-  <Navbar class="z-10 fixed top-0 w-full"/>
   <div>
-    <router-view />
+    <Navbar class="z-10 fixed top-0 w-full" />
+    <div>
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -16,5 +18,4 @@ export default {
 </script>
 
 <style>
-/* CSS Anda dapat ditambahkan di sini */
 </style>

@@ -2,5 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-background: rgb(0,0,0);
-background: linear-gradient(49deg, rgba(0,0,0,1) 0%, rgba(9,121,26,1) 89%);
