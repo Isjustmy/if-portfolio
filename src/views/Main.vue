@@ -11,7 +11,8 @@
           </h1>
           <h2 class="pt-3 pb-10 text-2xl">A Person who loves backend programming.</h2>
           <div class="w-full flex justify-center pt-2">
-            <button @click="scrollToSection('about')" class="btn btn-primary flex flex-col w-[40%] h-[20%] items-center">
+            <button @click="scrollToSection('about')"
+              class="btn btn-primary flex flex-col w-[30%] h-[20%] items-center">
               <p class="pt-3 pb-1">Check More About Me</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-arrow-down pb-1" viewBox="0 0 16 16">
@@ -25,24 +26,72 @@
     </div>
 
     <!-- About Section -->
-    <div id="about" class="min-h-screen flex items-center justify-center">
+    <div id="about" class="min-h-screen flex items-center justify-center font-dm-sans">
       <div class="text-center flex flex-col items-center justify-center">
         <h1 class="text-5xl font-bold">About Me</h1>
-        <div class="mt-10 border border-white w-[60%] h-auto p-5">
-          <p class="text-xl">My name is Ibnu Fajar, a programmer and student at 1 Ciomas State Vocational School. I am proficient in several programming languages, including PHP, JavaScript, Python, Java, and little bit C++.</p>
-          <p class="text-xl pt-4">Additionally, I have experience working with frameworks such as Laravel and Vue.js, like in this portfolio.</p>
-          <p class="text-xl pt-4">That's all. Nothing more about me that i can explain in this section.</p>
+        <div class="flex mt-5 w-[90%] h-auto p-5 items-center justify-center">
+          <div class="w-[300px] relative">
+            <div class="bg-[#ACE1AF] absolute w-[280px] h-[333px] -ml-1.5 rounded-3xl"></div>
+            <img src="../assets/ibnu-removebg-crop2.png" class="w-[90%] rounded-xl overflow-hidden relative z-10" />
+          </div>
+          <div class="w-1/2 text-left text-xl ml-10">
+            <p>My name is Ibnu Fajar, and I am 17 years old. I am an experienced backend programmer proficient in
+              various programming languages such as HTML, CSS, JavaScript, PHP, Python, and C++.</p>
+            <p class="pt-5">Additionally, I am skilled in using various frameworks, particularly Laravel for backend
+              development and Vue for frontend development. With this combination of knowledge, I am capable of building
+              and managing efficient and scalable web applications.</p>
+
+            <!-- button cv (Work in progress) -->
+            <button class="btn bg-secondary-color-3 border-none mt-5">Download CV</button>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Skills Section -->
     <div id="skills" class="min-h-screen flex items-center justify-center">
-      <div class="w-[75%] h-[500px] flex flex-col items-center justify-center border border-white">
+      <div class="w-[85%] h-[500px] flex flex-col items-center justify-center">
         <h1 class="text-5xl mb-4 font-bold">Skills Section</h1>
-        <div class="card bg-slate-800 bg-opacity-60 backdrop-blur-xl w-[92%] h-[300px]">testing dulu</div>
+        <div class="w-[92%] h-[300px] text-center flex items-center justify-center">
+          <div class="border border-white w-full">
+            <p class="text-xl">Ini adalah beberapa stack teknologi yang saya kuasai.</p>
+            <div class="flex border border-white w-[300px] items-center justify-center">
+              <div class="flex flex-col">
+                <img src="../assets/javascript.svg"
+                  class="w-20 rounded-md overflow-hidden grayscale hover:grayscale-0 transition duration-150 ease-in-out" />
+                <p class="font-semibold text-md">Javascript</p>
+              </div>
+              <div class="flex flex-col">
+                <img src="../assets/javascript.svg"
+                  class="w-20 rounded-md overflow-hidden grayscale hover:grayscale-0 transition duration-150 ease-in-out" />
+                <p class="font-semibold text-md">Javascript</p>
+              </div>
+              <div class="flex flex-col">
+                <img src="../assets/javascript.svg"
+                  class="w-20 rounded-md overflow-hidden grayscale hover:grayscale-0 transition duration-150 ease-in-out" />
+                <p class="font-semibold text-md">Javascript</p>
+              </div>
+              <div class="flex flex-col">
+                <img src="../assets/javascript.svg"
+                  class="w-20 rounded-md overflow-hidden grayscale hover:grayscale-0 transition duration-150 ease-in-out" />
+                <p class="font-semibold text-md">Javascript</p>
+              </div>
+              <div class="flex flex-col">
+                <img src="../assets/javascript.svg"
+                  class="w-20 rounded-md overflow-hidden grayscale hover:grayscale-0 transition duration-150 ease-in-out" />
+                <p class="font-semibold text-md">Javascript</p>
+              </div>
+              <div class="flex flex-col">
+                <img src="../assets/javascript.svg"
+                  class="w-20 rounded-md overflow-hidden grayscale hover:grayscale-0 transition duration-150 ease-in-out" />
+                <p class="font-semibold text-md">Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
 
     <!-- Project Section -->
     <div id="projects" class="min-h-screen flex items-center justify-center">
@@ -76,15 +125,16 @@ export default {
 
 <style scoped>
 .custom-gradient {
-  background: rgb(0,0,0);
-  background: linear-gradient(38deg, rgba(0,0,0,1) 80%, rgba(9,121,26,1) 100%);
-      }
+  background: rgb(0, 0, 0);
+  background: linear-gradient(38deg, rgba(0, 0, 0, 1) 80%, rgba(9, 121, 26, 1) 100%);
+}
 
 .font-dm-sans {
   font-family: 'DM Sans', sans-serif;
 }
 
 .text-secondary-color-4 {
-  color: #58C25D; /* Adjust the color as per your theme */
+  color: #58C25D;
+  /* Adjust the color as per your theme */
 }
 </style>

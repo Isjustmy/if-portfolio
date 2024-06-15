@@ -5,10 +5,11 @@
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
-        <li class="btn btn-neutral border-transparent px-2"><a @click="scrollToSection('hero')">Home</a></li>
-        <li class="btn btn-neutral border-transparent px-2"><a @click="scrollToSection('about')">About</a></li>
-        <li class="btn btn-neutral border-transparent px-2"><a @click="scrollToSection('skills')">Skills</a></li>
-        <li class="btn btn-neutral border-transparent px-2"><a @click="scrollToSection('contact')">Contact Me</a></li>
+        <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('hero')">Home</a></li>
+        <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('about')">About</a></li>
+        <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('skills')">Skills</a></li>
+        <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('projecr')">Project</a></li>
+        <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('contact')">Contact Me</a></li>
       </ul>
     </div>
   </div>
