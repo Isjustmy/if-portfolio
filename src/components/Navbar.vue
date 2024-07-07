@@ -8,7 +8,7 @@
         <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('hero')">Home</a></li>
         <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('about')">About</a></li>
         <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('skills')">Skills</a></li>
-        <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('projecr')">Project</a></li>
+        <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('projects')">Project</a></li>
         <li class="btn btn-neutral border-transparent px-1"><a @click="scrollToSection('contact')">Contact Me</a></li>
       </ul>
     </div>
