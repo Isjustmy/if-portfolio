@@ -5,6 +5,7 @@ import cppLogo from '../assets/c-plusplus.svg';
 import javaLogo from '../assets/java.svg';
 import laravelLogo from '../assets/laravel.svg';
 import vueLogo from '../assets/vue.svg';
+import nuxtLogo from '../assets/nuxt-icon.svg';
 
 const programming_languages = [
   {
@@ -58,6 +59,13 @@ const frameworks = [
     link: 'https://vuejs.org/',
     class_for_logo: "vue",
     class_for_name: "vue-name"
+  },
+  {
+    name: 'NuxtJS',
+    logo: nuxtLogo,
+    link: 'https://nuxt.com/',
+    class_for_logo: "nuxt",
+    class_for_name: "nuxt-name"
   }
 ]
 

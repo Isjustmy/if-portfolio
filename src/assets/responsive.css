@@ -1,0 +1,21 @@
+#projects {
+    @media (max-width: 1000px){
+        height: 200vh;
+        
+    }
+}
+
+#projects .induk-kartu {
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+}
+
+#projects .card {
+    @media (max-width: 1000px){
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

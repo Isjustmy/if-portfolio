@@ -11,9 +11,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "js-cookie": "^3.0.5",
     "theme-change": "^2.5.0",
     "typed.js": "^2.1.0",
     "vue": "^3.4.21",
+    "vue-i18n": "^9.13.1",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
