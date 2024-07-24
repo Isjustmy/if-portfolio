@@ -87,10 +87,14 @@ const messages = {
     contactMeMessage: "Message",
     contactMeMessagePlaceholder: "Message Here",
     contactMeButtonText: "Send",
+    contactMeAlertSuccess: "Your message has been sent successfully!",
+    contactMeAlertError: "An error occurred, your message could not be sent.",
 
     // Footer
     note1: "NOTE 1: This Website uses cookies ONLY JUST storing your languages preference.",
-    note2: "NOTE 2: This website still in progress. Responsive Layout (e.g. mobile) possibly broken, and some features not avalaible."
+    note2: "NOTE 2: This website still in progress. Responsive Layout (e.g. mobile) possibly broken, and some features not avalaible.",
+
+    loadingText: "Loading"
   },
   id: {
     // Bagian Navbar
@@ -176,10 +180,14 @@ const messages = {
     contactMeMessage: "Pesan",
     contactMeMessagePlaceholder: "Pesan",
     contactMeButtonText: "Kirim",
+    contactMeAlertSuccess: "Pesan anda berhasil dikirim!",
+    contactMeAlertError: "Terjadi kesalahan, pesan anda gagal dikirim.",
 
     // Footer
     note1: "CATATAN 1: Website ini menggunakan cookies HANYA UNTUK menyimpan preferensi bahasa yang anda pilih.",
-    note2: "CATATAN 2: Website ini masih dalam pengembangan. Layout Responsif (contohnya mobile) kemungkinan akan rusak, dan beberapa fitur masih belum tersedia."
+    note2: "CATATAN 2: Website ini masih dalam pengembangan. Layout Responsif (contohnya mobile) kemungkinan akan rusak, dan beberapa fitur masih belum tersedia.",
+
+    loadingText: "Sedang Memproses"
   },
 };
 
