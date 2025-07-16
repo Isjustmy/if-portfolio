@@ -38,6 +38,7 @@ const messages = {
     classWebsiteProjectDescription: "Class 11 website project with four teammates, showcasing students along with their certificates, group photos, and the class organigram structure.",
     ifPortofolioDescription: "This Portofolio",
     smkcodingProjectDescription: "Project to create a simple ecommerce website using Nuxt.js",
+    kostkitaDescription: "KostKita.id is a website to display coliving, apartments and boarding houses and can make bookings directly.",
 
     // Certificate Section
     certificateTitle: "Certificate",
@@ -131,6 +132,7 @@ const messages = {
     classWebsiteProjectDescription: "Projek website kelas 11 bersama empat rekan tim, menampilkan siswa-siswa kelas saya (11 PPLG/RPL 3) beserta sertifikat mereka, foto bersama, dan struktur organigram kelas.",
     ifPortofolioDescription: "Portofolio yang sedang anda lihat saat ini.",
     smkcodingProjectDescription: "Projek untuk membuat website toko ecommerce sederhana dengan Nuxt.JS",
+    kostkitaDescription: "KostKita.id adalah sebuah website untuk menampilkan coliving, apartemen dan kost serta dapat membuat pemesanan kamar (booking) secara langsung.",
 
     // Certificate Section
     certificateTitle: "Sertifikat",

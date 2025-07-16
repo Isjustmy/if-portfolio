@@ -43,7 +43,7 @@
 
             <!-- button cv (Work in progress) -->
             <button @click="downloadCV" class="btn bg-secondary-color-3 border-none mt-5">{{ $t('downloadTextButton')
-              }}</button>
+            }}</button>
           </div>
         </div>
       </div>
@@ -88,17 +88,17 @@
 
           <div class="card mr-8 w-[300px] h-[400px] bg-white bg-opacity-20 backdrop-blur-md shadow-xl rounded-xl">
             <figure class="px-3 pt-3">
-              <img src="../assets/landing page taskminder.png" alt="Taskminder Landing Page Image" class="rounded-md" />
+              <img src="../assets/kostkita_website_screenshot.png" alt="KostKita.id Landing Page Image"
+                class="rounded-md" />
             </figure>
             <div class="h-[200px] mt-5 items-center text-center">
               <div class="h-[75%]">
-                <h2 class="text-[20px] font-semibold pb-2 font-poppins">Taskminder</h2>
-                <p class="poppins-regular text-[14px] w-[80%] mx-auto text-center">{{ $t('taskminderDescription') }}</p>
+                <h2 class="text-[20px] font-semibold pb-2 font-poppins">KostKita.id</h2>
+                <p class="poppins-regular text-[14px] w-[80%] mx-auto text-center">{{
+                  truncateDescription($t('kostkitaDescription')) }}</p>
               </div>
               <div class="mt-2">
-                <button @click="openVideoModal" class="btn bg-purple-900 hover:bg-purple-600 border-none mr-2">{{
-                  $t('taskminderTutorialButtonText') }}</button>
-                <a target="_blank" href="https://taskminder.pplgsmkn1ciomas.my.id/"
+                <a target="_blank" href="https://kostkita.id"
                   class="btn bg-blue-700 hover:bg-blue-500 border-none ml-2">Website</a>
               </div>
             </div>
@@ -143,7 +143,7 @@
 
         <div class="flex items-center justify-center w-[100%] h-5/6 mt-10">
 
-          <div class="card w-[300px] h-[400px] bg-white bg-opacity-20 backdrop-blur-md shadow-xl rounded-xl">
+          <div class="card mr-8 w-[300px] h-[400px] bg-white bg-opacity-20 backdrop-blur-md shadow-xl rounded-xl">
             <figure class="px-3 pt-3">
               <img src="../assets/landing page ecommerce.png" alt="SMKCoding Ecommerce Image" class="rounded-md" />
             </figure>
@@ -151,10 +151,28 @@
               <div class="h-[75%]">
                 <h2 class="text-[20px] font-semibold pb-2 font-poppins">SMKCoding Ecommerce</h2>
                 <p class="poppins-regular text-[14px] w-[80%] mx-auto text-center">{{ $t('smkcodingProjectDescription')
-                  }}</p>
+                }}</p>
               </div>
               <div class="mt-2">
                 <a target="_blank" href="https://ecommerce-smkcoding.vercel.app/"
+                  class="btn bg-blue-700 hover:bg-blue-500 border-none ml-2">Website</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card ml-8 w-[300px] h-[400px] bg-white bg-opacity-20 backdrop-blur-md shadow-xl rounded-xl">
+            <figure class="px-3 pt-3">
+              <img src="../assets/landing page taskminder.png" alt="Taskminder Landing Page Image" class="rounded-md" />
+            </figure>
+            <div class="h-[200px] mt-5 items-center text-center">
+              <div class="h-[75%]">
+                <h2 class="text-[20px] font-semibold pb-2 font-poppins">Taskminder</h2>
+                <p class="poppins-regular text-[14px] w-[80%] mx-auto text-center">{{ $t('taskminderDescription') }}</p>
+              </div>
+              <div class="mt-2">
+                <button @click="openVideoModal" class="btn bg-purple-900 hover:bg-purple-600 border-none mr-2">{{
+                  $t('taskminderTutorialButtonText') }}</button>
+                <a target="_blank" href="https://taskminder.pplgsmkn1ciomas.my.id/"
                   class="btn bg-blue-700 hover:bg-blue-500 border-none ml-2">Website</a>
               </div>
             </div>
@@ -457,7 +475,7 @@ export default {
             this.userName = ''
             this.userEmail = ''
             this.userMessage = ''
-            this.toast.success(this.$t('contactMeAlertSuccess') , {
+            this.toast.success(this.$t('contactMeAlertSuccess'), {
               position: "top-center",
               timeout: 2500,
               hideProgressBar: false,
@@ -470,22 +488,24 @@ export default {
             this.userMessage = ''
             console.log(error)
             this.toast.error(this.$t('contactMeAlertError'), {
-            position: "top-center",
-            timeout: 2500,
-            hideProgressBar: false,
-          });
+              position: "top-center",
+              timeout: 2500,
+              hideProgressBar: false,
+            });
           },
         );
     },
     truncateDescription(description) {
-      // Fungsi untuk memotong deskripsi tugas
-      const maxWords = 19; // Jumlah maksimal kata yang ingin ditampilkan
-      const words = description.split(' ');
-      if (words.length > maxWords) {
-        return words.slice(0, maxWords).join(' ') + '...'; // Potong deskripsi dan tambahkan elipsis
-      } else {
-        return description; // Kembalikan deskripsi asli jika tidak perlu dipotong
+      const maxChars = 110;
+      if (description.length <= maxChars) return description;
+
+      // Potong di batas karakter, lalu cari spasi terakhir
+      let truncated = description.slice(0, maxChars);
+      const lastSpace = truncated.lastIndexOf(' ');
+      if (lastSpace > 0) {
+        truncated = truncated.slice(0, lastSpace);
       }
+      return truncated.trim() + '...';
     },
     openVideoModal() {
       this.videoUrl = 'https://www.youtube.com/embed/UW-HV1Ik7Uw?si=c1SdLYQCVNKvtorD';
