@@ -424,9 +424,9 @@ export default {
       // Menentukan jalur file yang akan diunduh
       let filePath;
       if (language === 'id') {
-        filePath = '/cv/IF CV 2 (Indonesia Ver.).jpg';
+        filePath = '/cv/CV_Ibnu Fajar (Bahasa Indonesia.pdf';
       } else if (language === 'en') {
-        filePath = '/cv/IF CV 2 (English Ver.).jpg';
+        filePath = '/cv/CV_Ibnu Fajar (english version).pdf';
       } else {
         // Jika tidak ada cookies atau nilai cookies tidak sesuai
         console.error('Unexpected error happen.');
