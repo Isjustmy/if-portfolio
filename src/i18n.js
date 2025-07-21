@@ -79,7 +79,7 @@ const messages = {
 
     // Contact Me Section
     contactMeTitle: "Contact Me",
-    contactMeDescription: "You can contact me through the following form",
+    contactMeDescription: "You can contact me via email: ",
     contactMeDescriptionTemporary: "(This feature isn't avalaible right now, DM my instagram instead (link is in the Instagram logo in the footer below).)",
     contactMeName: "Name",
     contactMeNamePlaceholder: "Name",
@@ -173,7 +173,7 @@ const messages = {
 
     // Bagian Kontak
     contactMeTitle: "Kontak",
-    contactMeDescription: "Anda bisa menghubungi saya melalui form berikut",
+    contactMeDescription: "Anda bisa menghubungi saya melalui email: ",
     contactMeDescriptionTemporary: "(Fitur ini belum tersedia, harap DM instagram saya sebagai gantinya (link berada di logo instagram pada footer dibawah ini).)",
     contactMeName: "Nama",
     contactMeNamePlaceholder: "Nama",
